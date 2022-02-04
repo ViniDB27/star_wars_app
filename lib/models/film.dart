@@ -17,10 +17,10 @@ class Film {
 
   factory Film.fromJson(Map<String, dynamic> film) => Film(
         title: film['title'],
-        id: film['id'],
+        id: film['episode_id'],
         openingCrawl: film['opening_crawl'],
         director: film['director'],
         producer: film['producer'],
-        releaseDate: film['releaseDate'],
+        releaseDate: film['release_date'],
       );
 }

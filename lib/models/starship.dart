@@ -41,7 +41,7 @@ class Starship {
         cargoCapacity: starship['cargo_capacity'],
         consumables: starship['consumables'],
         hyperdriveRating: starship['hyperdrive_rating'],
-        mglt: starship['mglt'],
+        mglt: starship['MGLT'],
         starshipClass: starship['starship_class'],
       );
 }
