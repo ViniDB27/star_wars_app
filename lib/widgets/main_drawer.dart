@@ -73,7 +73,7 @@ class MainDrawer extends StatelessWidget {
           _createitem(
             Icons.circle,
             'Planetas',
-            () => Navigator.of(context).pushReplacementNamed(AppRoutes.listFilms),
+            () => Navigator.of(context).pushReplacementNamed(AppRoutes.listPlanets),
           ),
         ],
       ),

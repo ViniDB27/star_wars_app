@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:star_wars/routes/app_routes.dart';
 import 'package:star_wars/screens/films_screen.dart';
 import 'package:star_wars/screens/people_screen.dart';
+import 'package:star_wars/screens/planets_screen.dart';
 import 'package:star_wars/screens/species_screen.dart';
 import 'package:star_wars/screens/starships_screen.dart';
 import 'package:star_wars/screens/vehicles_screen.dart';
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         AppRoutes.listStarships: (ctx) => const StarshipScreen(),
         AppRoutes.listVehicles: (ctx) => const VehicleScreen(),
         AppRoutes.listSpecies: (ctx) => const SpeciesScreen(),
+        AppRoutes.listPlanets: (ctx) => const PlanetsScreen(),
       },
       debugShowCheckedModeBanner: false,
     );

@@ -4,4 +4,5 @@ class AppRoutes {
   static const String listStarships = "/starships";
   static const String listVehicles = "/vehicles";
   static const String listSpecies = "/species";
+  static const String listPlanets = "/planets";
 }

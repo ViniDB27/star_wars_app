@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:star_wars/models/film.dart';
 import 'package:star_wars/models/people.dart';
+import 'package:star_wars/models/planet.dart';
 import 'package:star_wars/models/species.dart';
 import 'package:star_wars/models/starship.dart';
 import 'package:star_wars/models/vehicle.dart';
@@ -70,13 +71,13 @@ class StarWarsHttp {
     return species;
   }
   
-  Future<List<Film>> getListOfPlanets() async {
+  Future<List<Planet>> getListOfPlanets() async {
     final String url = urlBase + "/planets";
     final response = await http.get(Uri.parse(url));
     final Map<String, dynamic> body = jsonDecode(response.body);
     final List<dynamic> planetsMap = body['results'];
-    final List<Film> planets = planetsMap
-        .map((p) => Film.fromJson(p))
+    final List<Planet> planets = planetsMap
+        .map((p) => Planet.fromJson(p))
         .toList();
 
     return planets;
